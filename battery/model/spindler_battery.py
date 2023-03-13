@@ -7,4 +7,4 @@ class SpindlerBattery(Battery, ABC):
         super().__init__(last_service_date, current_date)
         
     def battery_should_be_serviced(self) -> bool:
-        return self.current_date > self.last_service_date.replace(year=self.last_service_date.year + 2)
+        return self.current_date > self.last_service_date.replace(year=self.last_service_date.year + 3)
